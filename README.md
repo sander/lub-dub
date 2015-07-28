@@ -24,6 +24,8 @@ Run `lub-dub <uuid>`. Example:
 
 The first number on each line is bpm, the rest are the RR intervals (in milliseconds, resolution 1/1024 s) measured between the last and current transmissions.
 
+Tested with Polar H7.
+
 ## Removal
 
 Run `npm remove -g lub-dub`.
