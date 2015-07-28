@@ -1,0 +1,20 @@
+{
+  "name": "lub-dub",
+  "version": "0.0.1",
+  "description": "Stream bpm and r-r from BLE heart rate sensors to stdout",
+  "author": "Sander Dijkhuis",
+  "license": "ISC",
+  "dependencies": {
+    "noble": "^1.0.2"
+  },
+  "scripts": {
+    "build": "mkdir -p bin && echo '#!/usr/bin/env node' > bin/lub-dub.js && babel index.js >> bin/lub-dub.js"
+  },
+  "bin": {
+    "lub-dub": "bin/lub-dub.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/sander/lub-dub.git"
+  }
+}
