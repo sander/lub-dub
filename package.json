@@ -1,6 +1,6 @@
 {
   "name": "lub-dub",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Stream bpm and RR from BLE heart rate sensors to stdout",
   "author": "Sander Dijkhuis",
   "license": "ISC",

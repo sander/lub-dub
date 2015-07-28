@@ -10,7 +10,7 @@ function onRead(val, _) {
   const n = (val.length - 2) / 2;
   let vals = [rate];
   for (let i = 0; i < n; i++)
-    vals.push((val.readUInt16LE(2 + 2 * i) / 1024.0) * 1000.0);
+    vals.push(val.readUInt16LE(2 + 2 * i));
   console.log(vals.join(','))}
 
 noble.on('discover', p => {

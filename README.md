@@ -9,20 +9,18 @@ Install Node.js and run `npm install -g lub-dub`.
 Run `lub-dub <uuid>`. Example:
 
     $ lub-dub da53284303a740b68702ceb6259ebf3f
-    63
-    64,859.375,869.140625
-    65,847.65625
-    64,1065.4296875
-    63,1081.0546875
-    63,1005.859375
-    62,977.5390625
-    62,993.1640625
-    62,982.421875
-    62,952.1484375
-    62,801.7578125
-    63,833.0078125
+    65
+    65,912
+    64,1036
+    63,1065
+    63,1032
+    64,895
+    64,983
+    65,952,890
+    65,941
+    66,812
 
-The first number on each line is bpm, the rest are the RR intervals (in milliseconds, resolution 1/1024 s) measured between the last and current transmissions.
+The first number on each line is bpm, the rest are the RR intervals (unit is 1/1024 s) measured between the last and current transmissions.
 
 Tested with Polar H7.
 

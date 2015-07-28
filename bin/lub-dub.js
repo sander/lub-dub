@@ -17,7 +17,7 @@ function onRead(val, _) {
   var n = (val.length - 2) / 2;
   var vals = [rate];
   for (var i = 0; i < n; i++) {
-    vals.push(val.readUInt16LE(2 + 2 * i) / 1024.0 * 1000.0);
+    vals.push(val.readUInt16LE(2 + 2 * i));
   }console.log(vals.join(','));
 }
 
