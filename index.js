@@ -1,8 +1,8 @@
 import noble from 'noble';
 
 if (process.argv.length != 3) {
-	console.error('Provide a heart rate sensor UUID.');
-	process.exit(1);
+  console.error('Provide a heart rate sensor UUID.');
+  process.exit(1);
 }
 
 function onRead(val, _) {
