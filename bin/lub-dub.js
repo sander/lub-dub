@@ -24,10 +24,10 @@ function onRead(val, _) {
 _noble2['default'].on('discover', function (p) {
   if (process.argv[2] != p.uuid) return;
   p.connect(function (_) {
-    return p.discoverServices(['180d'], function (_, ss) {
-      if (ss.length != 1) return;
+    p.discoverServices(['180d'], function (_, ss) {
+      if (ss.length != 4) return;
       ss[0].discoverCharacteristics(['2a37'], function (_, cs) {
-        if (cs.length != 1) return;
+        if (cs.length != 2) return;
         cs[0].notify(true);
         cs[0].on('read', onRead);
       });

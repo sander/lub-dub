@@ -1,11 +1,11 @@
 {
   "name": "lub-dub",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Stream bpm and RR from BLE heart rate sensors to stdout",
   "author": "Sander Dijkhuis",
   "license": "ISC",
   "dependencies": {
-    "noble": "^1.0.2"
+    "noble": "^1.1.0"
   },
   "scripts": {
     "build": "mkdir -p bin && echo '#!/usr/bin/env node' > bin/lub-dub.js && babel index.js >> bin/lub-dub.js"
